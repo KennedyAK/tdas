@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Aulas.iml" filepath="$PROJECT_DIR$/.idea/Aulas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula 31_08/areaCalcular/areaCalcular.iml" filepath="$PROJECT_DIR$/aula 31_08/areaCalcular/areaCalcular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula 12_09/aula 12_09.iml" filepath="$PROJECT_DIR$/aula 12_09/aula 12_09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula 24_08/aula 24_08.iml" filepath="$PROJECT_DIR$/aula 24_08/aula 24_08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/conta - idealProject/conta - idealProject.iml" filepath="$PROJECT_DIR$/conta - idealProject/conta - idealProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula 31_08/contaBancaria/contaBancaria.iml" filepath="$PROJECT_DIR$/aula 31_08/contaBancaria/contaBancaria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula 17_08/contaBancaria/contaBancaria1.iml" filepath="$PROJECT_DIR$/aula 17_08/contaBancaria/contaBancaria1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula 31_08/coordenadas/coordenadas.iml" filepath="$PROJECT_DIR$/aula 31_08/coordenadas/coordenadas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula 17_08/lampada/lampada.iml" filepath="$PROJECT_DIR$/aula 17_08/lampada/lampada.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula 17_08/qacademico/qacademico.iml" filepath="$PROJECT_DIR$/aula 17_08/qacademico/qacademico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula 31_08/veiculo/veiculo.iml" filepath="$PROJECT_DIR$/aula 31_08/veiculo/veiculo.iml" />
+    </modules>
+  </component>
+</project>
