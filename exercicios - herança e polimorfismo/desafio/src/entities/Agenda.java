@@ -1,35 +1,34 @@
 package entities;
 
 import java.util.ArrayList;
-import entities.CasosException;
+
+import excecao.AgendaCheiaException;
+import excecao.ContatoNaoExisteException;
 
 public class Agenda {
     private ArrayList<Contato> contatos = new ArrayList<>();
     private static final int CAPACIDADE_MAXIMA = 10;
 
-    private CasosException casosE;
-
-    public void addContato(Contato contato) throws CasosException {
+    public void addContato(Contato contato) throws AgendaCheiaException {
 
         if (contatos.size() < CAPACIDADE_MAXIMA) {
             contatos.add(contato);
         } else {
-            throw new CasosException("A agenda está cheia. Não é possível adicionar mais contatos.");
+
+            throw new AgendaCheiaException("A agenda está cheia. Não é possível adicionar mais contatos.");
         }
 
     }
 
-    public Contato consultarCtt(int identificador) throws CasosException {
+    public Contato consultarCtt(int identificador) throws ContatoNaoExisteException {
 
         for (Contato contato : contatos) {
 
             if (contato.getIdentificador() == identificador) {
                 return contato;
-            } else {
-                throw new casosE.ContatoNaoExisteException("Contato não encontrado na agenda.");
             }
-
         }
-        return null;
+        throw new ContatoNaoExisteException("Contato não encontrado na agenda.");
+
     }
 }

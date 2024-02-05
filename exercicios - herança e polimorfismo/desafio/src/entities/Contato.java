@@ -4,7 +4,7 @@ public  class Contato {
 
     private String nome;
     private int tel;
-    private int identificador = 0;
+    private int identificador;
 
     public String getNome() {
         return nome;
@@ -18,10 +18,10 @@ public  class Contato {
         return identificador;
     }
 
-    public Contato(String nome, int tel) {
+    public Contato(String nome, int tel, int idtt) {
         this.nome = nome;
         this.tel = tel;
-        this.identificador++;
+        this.identificador = idtt;
     }
 
 

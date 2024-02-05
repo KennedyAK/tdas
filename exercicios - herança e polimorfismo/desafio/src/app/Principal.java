@@ -2,7 +2,8 @@ package app;
 
 import entities.Agenda;
 import entities.Contato;
-import entities.CasosException;
+import excecao.ContatoNaoExisteException;
+import excecao.AgendaCheiaException;
 
 import java.util.Scanner;
 
@@ -26,20 +27,19 @@ public class Principal {
             System.out.print("Escolha uma opção do menu: ");
             i = ler.nextInt();
 
-
             switch (i) {
                 case 0:
                     System.out.println("\nENCERRANDO.");
                     break;
 
                 case 1:
-                    System.out.println("Identificador: ");
+                    System.out.print("Identificador: ");
                     int idt = ler.nextInt();
 
                     try {
                         Contato contatoEnc = agenda.consultarCtt(idt);
                         System.out.println("Contato encontrado: " + contatoEnc.getNome() + ", " + contatoEnc.getTel());
-                    } catch (CasosException e) {
+                    } catch (ContatoNaoExisteException e) {
                         System.out.println(e.getMessage());
                     }
 
@@ -49,15 +49,18 @@ public class Principal {
                     System.out.print("\nNome do Contato: ");
                     String nome = ler.next();
 
-                    System.out.println("\nTelefone do contato: ");
+                    System.out.print("Telefone do contato: ");
                     int tel = ler.nextInt();
 
-                    Contato newContato = new Contato(nome, tel);
+                    System.out.print("Identificador do contato: ");
+                    int idtt = ler.nextInt();
+
+                    Contato newContato = new Contato(nome, tel, idtt);
 
                     try {
                         agenda.addContato(newContato);
                         System.out.println("Contato adicionado com sucesso!");
-                    } catch (CasosException e) {
+                    } catch (AgendaCheiaException e) {
                         System.out.println(e.getMessage());
                     }
 
